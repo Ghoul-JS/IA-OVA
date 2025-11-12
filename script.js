@@ -307,6 +307,7 @@ const AnimationModule = (() => {
 // ============================================
 // MÓDULO: GESTIÓN DE CARRUSEL
 // ============================================
+
 const CarouselModule = (() => {
     const init = () => {
         const carousels = document.querySelectorAll('.carousel');
@@ -412,7 +413,13 @@ const App = (() => {
 
 // Inicializar aplicación cuando el DOM esté listo
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', App.init);
+    document.addEventListener('DOMContentLoaded', () => {
+        NavigationModule.init();
+        CarouselModule.init();  
+        FormModule.init();   
+        ModalModule.init();  
+    });
 } else {
-    App.init();
+    NavigationModule.init();
+    CarouselModule.init();
 }
