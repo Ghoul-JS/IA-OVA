@@ -29,22 +29,32 @@ const NavigationModule = (() => {
     };
 
     // Función para cerrar menú al hacer clic en un enlace
-    const closeMenuOnClick = (e) => {
-        if (window.innerWidth <= 768) {
-            navMenu.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            const icon = menuToggle.querySelector('i');
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-        // Smooth scroll
-        e.preventDefault();
-        const targetId = e.currentTarget.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    };
+// Función para cerrar menú y manejar clics (MODIFICADA)
+const closeMenuOnClick = (e) => {
+    // Si es móvil, cierra el menú
+    if (window.innerWidth <= 768) {
+        navMenu.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+
+    // NUEVA LÓGICA: ¿Es un enlace a otra página?
+    const href = e.currentTarget.getAttribute('href');
+    if (href && !href.startsWith('#')) {  // Si NO empieza con # (no es scroll interno)
+        // Deja que el navegador maneje el click normal (redirecciona en misma pestaña)
+        return;  // No hace nada más, el enlace funciona solo
+    }
+
+    // Si ES scroll interno (empieza con #), haz el scroll suave
+    e.preventDefault();
+    const targetId = href;
+    const targetSection = document.querySelector(targetId);
+    if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+};
 
     // Función de inicialización
     const init = () => {

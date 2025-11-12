@@ -35,7 +35,7 @@
                 <li><a href="#services" class="nav-link">Aplicaciones</a></li>
                 <li><a href="#projects" class="nav-link">Futuro</a></li>
                 <li><a href="#gallery" class="nav-link">Galería</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -56,7 +56,7 @@
                     <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-folder-open" aria-hidden="true"></i> Aprender Más
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
+                    <a href="contacto.html" class="btn btn-secondary">
                         <i class="fas fa-envelope" aria-hidden="true"></i> Contactar
                     </a>
                 </div>
@@ -259,45 +259,6 @@
                 </button>
             </div>
         </section>
-
-        <!-- ============================================ SECCIÓN CONTACTO ============================================ -->
-        <section class="section" id="contact">
-            <h2 class="section-title">Contacto</h2>
-            <form class="contact-form" id="contactForm" novalidate>
-                <div class="form-group">
-                    <label for="name" class="form-label">
-                        <i class="fas fa-user" aria-hidden="true"></i> Nombre Completo
-                    </label>
-                    <input type="text" id="name" name="name" class="form-input" placeholder="Ingresa tu nombre" required aria-required="true" aria-describedby="nameError">
-                    <span class="form-error" id="nameError">Por favor ingresa tu nombre completo</span>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="form-label">
-                        <i class="fas fa-envelope" aria-hidden="true"></i> Correo Electrónico
-                    </label>
-                    <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required aria-required="true" aria-describedby="emailError">
-                    <span class="form-error" id="emailError">Por favor ingresa un correo válido</span>
-                </div>
-                <div class="form-group">
-                    <label for="subject" class="form-label">
-                        <i class="fas fa-tag" aria-hidden="true"></i> Asunto
-                    </label>
-                    <input type="text" id="subject" name="subject" class="form-input" placeholder="¿En qué puedo ayudarte?" required aria-required="true" aria-describedby="subjectError">
-                    <span class="form-error" id="subjectError">Por favor ingresa el asunto del mensaje</span>
-                </div>
-                <div class="form-group">
-                    <label for="message" class="form-label">
-                        <i class="fas fa-comment-alt" aria-hidden="true"></i> Mensaje
-                    </label>
-                    <textarea id="message" name="message" class="form-textarea" placeholder="Escribe tu mensaje aquí..." required aria-required="true" aria-describedby="messageError"></textarea>
-                    <span class="form-error" id="messageError">Por favor ingresa tu mensaje</span>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">
-                    <i class="fas fa-paper-plane" aria-hidden="true"></i> Enviar Mensaje
-                </button>
-            </form>
-        </section>
-    </main>
 
     <!-- ============================================ MODALES PARA EL FUTURO ============================================ -->
     <div class="modal" id="modalProject1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
