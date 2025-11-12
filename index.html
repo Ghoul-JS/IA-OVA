@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio web profesional con diseño responsive y animaciones modernas">
+    <meta name="keywords" content="portafolio, web, diseño, desarrollo, HTML, CSS, JavaScript">
+    <meta name="author" content="Estudiante">
+    <title>IA Explorer | El Futuro de la Inteligencia Artificial</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💼</text></svg>">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Modularizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================ HEADER CON NAVEGACIÓN ============================================ -->
+    <header class="header" id="header">
+        <nav class="nav" role="navigation" aria-label="Navegación principal">
+            <a href="#home" class="logo" aria-label="Ir al inicio">
+                <i class="fas fa-code" aria-hidden="true"></i>
+                <span>IA Explorer</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">¿Qué es la IA?</a></li>
+                <li><a href="#services" class="nav-link">Aplicaciones</a></li>
+                <li><a href="#projects" class="nav-link">Futuro</a></li>
+                <li><a href="#gallery" class="nav-link">Galería</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================ SECCIÓN HERO ============================================ -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">
+                    <i class="fas fa-rocket" aria-hidden="true"></i> Bienvenido al futuro
+                </p>
+                <h1 class="hero-title">Inteligencia Artificial</h1>
+                <p class="hero-description">
+                    La revolución tecnológica que está transformando el mundo. Descubre cómo la IA está cambiando nuestra forma de vivir, trabajar y soñar.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-folder-open" aria-hidden="true"></i> Aprender Más
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Contactar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ SECCIÓN SOBRE LA IA ============================================ -->
+        <section class="section" id="about">
+            <h2 class="section-title">¿Qué es la Inteligencia Artificial?</h2>
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <div class="card-icon text-center">
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <h3 class="card-title text-center">La Ciencia de Hacer Máquinas Inteligentes</h3>
+                <p class="card-description">
+                    La Inteligencia Artificial (IA) es una rama de la informática que permite a las máquinas imitar la inteligencia humana. Desde reconocer patrones hasta tomar decisiones complejas, la IA está presente en casi todos los aspectos de nuestra vida moderna.
+                </p>
+                <p class="card-description">
+                    No es solo ciencia ficción: la IA ya impulsa asistentes virtuales, diagnósticos médicos, vehículos autónomos y sistemas de recomendación que usamos todos los días.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================ SECCIÓN APLICACIONES DE LA IA ============================================ -->
+        <section class="section" id="services">
+            <h2 class="section-title">Aplicaciones de la IA</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Medicina</h3>
+                    <p class="card-description">
+                        Diagnósticos más precisos, descubrimiento de medicamentos y cirugías asistidas por robots. La IA está salvando vidas todos los días.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-bus" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Transporte</h3>
+                    <p class="card-description">
+                        Vehículos autónomos, optimización de rutas y sistemas de tráfico inteligentes que reducen accidentes y emisiones.
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Educación</h3>
+                    <p class="card-description">
+                        Tutores virtuales personalizados, evaluación automática y aprendizaje adaptativo para cada estudiante.
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Medio Ambiente</h3>
+                    <p class="card-description">
+                        Predicción de desastres naturales, optimización del uso de recursos y monitoreo de especies en peligro de extinción.
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Arte y Creatividad</h3>
+                    <p class="card-description">
+                        Generación de música, pintura, literatura y diseño. La IA como colaborador creativo del ser humano.
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Seguridad</h3>
+                    <p class="card-description">
+                        Detección de fraudes, ciberseguridad avanzada y sistemas de vigilancia inteligentes que protegen a la sociedad.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============================================ SECCIÓN FUTURO DE LA IA ============================================ -->
+        <section class="section" id="projects">
+            <h2 class="section-title">El Futuro de la IA</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">IA General</h3>
+                    <p class="card-description">
+                        Máquinas que pueden realizar cualquier tarea intelectual que un humano puede hacer. ¿Estamos cerca?
+                    </p>
+                    <button class="btn btn-primary mt-1" onclick="openModal('project1')">
+                        <i class="fas fa-eye" aria-hidden="true"></i> Ver Detalles
+                    </button>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Interfaz Cerebro-Máquina</h3>
+                    <p class="card-description">
+                        Conectar directamente el cerebro humano con computadoras. El siguiente paso en la evolución.
+                    </p>
+                    <button class="btn btn-primary mt-1" onclick="openModal('project2')">
+                        <i class="fas fa-eye" aria-hidden="true"></i> Ver Detalles
+                    </button>
+                </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-heart-circle-check" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Ética en la IA</h3>
+                    <p class="card-description">
+                        ¿Cómo aseguramos que la IA beneficie a toda la humanidad? El debate ético del siglo.
+                    </p>
+                    <button class="btn btn-primary mt-1" onclick="openModal('project3')">
+                        <i class="fas fa-eye" aria-hidden="true"></i> Ver Detalles
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============================================ SECCIÓN CARRUSEL ============================================ -->
+        <section class="section" id="gallery">
+            <h2 class="section-title">Galería</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <!-- IMAGEN 1 -->
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/drp8i1fbf/image/upload/v1762962704/MediaTek-IA-2023_vxbl24.webp" alt="IA img1">
+                        <div class="carousel-caption">
+                            <h4>MediaTek IA 2023</h4>
+                            <p>Avances en hardware para IA</p>
+                        </div>
+                    </div>
+
+                    <!-- IMAGEN 2 -->
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/drp8i1fbf/image/upload/v1762962705/GettyImages-2164746643-1_u2bf1x.jpg" alt="IA img2">
+                        <div class="carousel-caption">
+                            <h4>Inteligencia Artificial</h4>
+                            <p>El poder de los algoritmos</p>
+                        </div>
+                    </div>
+
+                    <!-- IMAGEN 3 -->
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/drp8i1fbf/image/upload/v1762962804/Le9zsr8bQmv7gmZW40UXiVaPsGcpVwaY65mw28tU_m3anrc.webp" alt="IA img3">
+                        <div class="carousel-caption">
+                            <h4>Redes Neuronales</h4>
+                            <p>Inspiradas en el cerebro humano</p>
+                        </div>
+                    </div>
+
+                    <!-- VIDEO 1 -->
+                    <div class="carousel-item">
+                        <video 
+                            src="https://res.cloudinary.com/drp8i1fbf/video/upload/v1762964748/8327799-uhd_3840_2160_25fps_yh1duo.mp4" 
+                            autoplay 
+                            muted 
+                            loop 
+                            playsinline
+                            class="carousel-video"
+                            aria-label="Video sobre IA">
+                        </video>
+                        <div class="carousel-caption">
+                            <h4>IA en Acción</h4>
+                            <p>Demostración en tiempo real</p>
+                        </div>
+                    </div>
+
+                    <!-- VIDEO 2 -->
+                    <div class="carousel-item">
+                        <video 
+                            src="https://res.cloudinary.com/drp8i1fbf/video/upload/v1762964714/854322-hd_1280_720_25fps_bqbklw.mp4" 
+                            autoplay 
+                            muted 
+                            loop 
+                            playsinline
+                            class="carousel-video"
+                            aria-label="Video sobre IA">
+                        </video>
+                        <div class="carousel-caption">
+                            <h4>El Futuro de la IA</h4>
+                            <p>Lo que viene en los próximos años</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del carrusel -->
+                <button class="carousel-control prev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control next" aria-label="Siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- ============================================ SECCIÓN CONTACTO ============================================ -->
+        <section class="section" id="contact">
+            <h2 class="section-title">Contacto</h2>
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name" class="form-label">
+                        <i class="fas fa-user" aria-hidden="true"></i> Nombre Completo
+                    </label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Ingresa tu nombre" required aria-required="true" aria-describedby="nameError">
+                    <span class="form-error" id="nameError">Por favor ingresa tu nombre completo</span>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Correo Electrónico
+                    </label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required aria-required="true" aria-describedby="emailError">
+                    <span class="form-error" id="emailError">Por favor ingresa un correo válido</span>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">
+                        <i class="fas fa-tag" aria-hidden="true"></i> Asunto
+                    </label>
+                    <input type="text" id="subject" name="subject" class="form-input" placeholder="¿En qué puedo ayudarte?" required aria-required="true" aria-describedby="subjectError">
+                    <span class="form-error" id="subjectError">Por favor ingresa el asunto del mensaje</span>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">
+                        <i class="fas fa-comment-alt" aria-hidden="true"></i> Mensaje
+                    </label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Escribe tu mensaje aquí..." required aria-required="true" aria-describedby="messageError"></textarea>
+                    <span class="form-error" id="messageError">Por favor ingresa tu mensaje</span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i> Enviar Mensaje
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ============================================ MODALES PARA EL FUTURO ============================================ -->
+    <div class="modal" id="modalProject1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('project1')" aria-label="Cerrar modal">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <h3 class="modal-title" id="modalTitle1">
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i> Inteligencia Artificial General (AGI)
+            </h3>
+            <p class="modal-text">
+                <strong>¿Qué es?</strong> La AGI sería una máquina capaz de entender, aprender y aplicar conocimiento en cualquier dominio intelectual al nivel humano o superior.<br><br>
+                <strong>Estado actual:</strong> Aún no existe, pero empresas como OpenAI, DeepMind y xAI trabajan intensamente en su desarrollo.
+            </p>
+            <ul class="modal-text" style="list-style-position: inside; margin-top: 1rem;">
+                <li>Podría resolver problemas que ni siquiera hemos planteado</li>
+                <li>Capaz de transferir aprendizaje entre dominios</li>
+                <li>Podría acelerar el progreso científico exponencialmente</li>
+                <li>Representa tanto la mayor oportunidad como el mayor riesgo</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="modalProject2" role="dialog" aria-labelledby="modalTitle2" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('project2')" aria-label="Cerrar modal">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <h3 class="modal-title" id="modalTitle2">
+                <i class="fa-solid fa-brain" aria-hidden="true"></i> Interfaz Cerebro-Máquina
+            </h3>
+            <p class="modal-text">
+                <strong>¿Qué es?</strong> Tecnología que permite comunicación directa entre el cerebro humano y dispositivos digitales.<br><br>
+                <strong>Ejemplos actuales:</strong> Neuralink de Elon Musk, implantes que permiten controlar computadoras con el pensamiento.
+            </p>
+            <ul class="modal-text" style="list-style-position: inside; margin-top: 1rem;">
+                <li>Restaurar funciones motoras en parálisis</li>
+                <li>Comunicación instantánea con IA</li>
+                <li>Memoria expandida y aprendizaje acelerado</li>
+                <li>Fusión entre inteligencia biológica y artificial</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="modalProject3" role="dialog" aria-labelledby="modalTitle3" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('project3')" aria-label="Cerrar modal">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <h3 class="modal-title" id="modalTitle3">
+                <i class="fa-solid fa-heart-circle-check" aria-hidden="true"></i> Ética en la IA
+            </h3>
+            <p class="modal-text">
+                <strong>Principales preocupaciones:</strong> Sesgo algorítmico, privacidad, desempleo tecnológico, armas autónomas.<br><br>
+                <strong>Iniciativas:</strong> Principios de Asilomar, regulaciones de la UE, comités éticos en empresas de IA.
+            </p>
+            <ul class="modal-text" style="list-style-position: inside; margin-top: 1rem;">
+                <li>Transparencia en algoritmos de decisión</li>
+                <li>Protección de datos personales</li>
+                <li>Distribución equitativa de beneficios</li>
+                <li>Control humano sobre sistemas críticos</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============================================ MODAL DE ÉXITO ============================================ -->
+    <div class="modal" id="successModal" role="dialog" aria-labelledby="successTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeSuccessModal()" aria-label="Cerrar modal">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <h3 class="modal-title text-center" id="successTitle">
+                <i class="fas fa-check-circle" aria-hidden="true" style="color: #10b981;"></i> ¡Mensaje Enviado!
+            </h3>
+            <p class="modal-text text-center">
+                Tu mensaje ha sido enviado exitosamente. Te responderé lo antes posible.
+            </p>
+        </div>
+    </div>
+
+        <!-- ============================================ FOOTER ============================================ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Visitar GitHub" title="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Visitar LinkedIn" title="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Visitar Twitter" title="Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Visitar Instagram" title="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                <i class="fas fa-heart" aria-hidden="true" style="color: var(--color-acento);"></i> Desarrollado con las mejores prácticas
+            </p>
+            <p class="footer-text">
+                &copy; 2025 IA-AOT. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modularizado -->
+    <script src="script.js"></script>
+</body>
+</html>
